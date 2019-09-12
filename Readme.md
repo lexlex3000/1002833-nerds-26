@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Alexej Gončarenko](https://up.htmlacademy.ru/htmlcss/26/user/1002833).
-* Наставник: `Неизвестно`.
+* Наставник: [Гаджи Гаджидадаев](https://htmlacademy.ru/profile/id512905).
 
 ---
 
