@@ -26,50 +26,58 @@
     <section>
       <h2>Фильтр товаров</h2>
       <!-- форма  -->
-      <span>Стоимость</span>
-      <input type="range">
-      <span>Сетка:</span>
-      <ul>
-        <li>
-          <label>
-            <input type="radio" name="net" value="Адаптивная" checked>Адаптивная
+        <form method="get">
+         <span>Стоимость</span>
+         <input type="range" name="price-slider">
+          <label>От
+            <input type="number" name="min-price" value="0">
           </label>
-        </li>
-        <li>
-          <label>
-            <input type="radio" name="net" value="Фиксированная">Фиксированная
+          <label>До
+            <input type="number" name="max-price" value="15000">
           </label>
-        </li>
-        <li>
-          <label>
-            <input type="radio" name="net" value="Резиновая">Резиновая
-          </label>
-        </li>
-      </ul>
-      <span>Особенности:</span>
-      <ul>
-        <li>
-          <input type="checkbox" name="slider" id="slider" checked>
-          <label for="slider">Слайдер</label>
-        </li>
-        <li>
-          <input type="checkbox" name="advantages" id="advantages">
-          <label for="advantages">Блок преимуществ</label>
-        </li>
-        <li>
-          <input type="checkbox" name="news" id="news" checked>
-          <label for="news">Новости</label>
-        </li>
-        <li>
-          <input type="checkbox" name="gallery" id="gallery">
-          <label for="gallery">Галерея</label>
-        </li>
-        <li>
-          <input type="checkbox" name="basket" id="basket">
-          <label for="basket">Корзина</label>
-        </li>
-      </ul>
-      <button>Показать</button>
+         <span>Сетка:</span>
+         <ul>
+           <li>
+             <label>
+              <input type="radio" name="net" value="Адаптивная" checked>Адаптивная
+             </label>
+           </li>
+           <li>
+             <label>
+               <input type="radio" name="net" value="Фиксированная">Фиксированная
+             </label>
+           </li>
+           <li>
+             <label>
+              <input type="radio" name="net" value="Резиновая">Резиновая
+             </label>
+           </li>
+         </ul>
+         <span>Особенности:</span>
+         <ul>
+           <li>
+              <input type="checkbox" name="slider" id="slider" checked>
+             <label for="slider">Слайдер</label>
+           </li>
+            <li>
+             <input type="checkbox" name="advantages" id="advantages">
+             <label for="advantages">Блок преимуществ</label>
+           </li>
+           <li>
+            <input type="checkbox" name="news" id="news" checked>
+            <label for="news">Новости</label>
+           </li>
+           <li>
+            <input type="checkbox" name="gallery" id="gallery">
+            <label for="gallery">Галерея</label>
+           </li>
+           <li>
+           <input type="checkbox" name="basket" id="basket">
+            <label for="basket">Корзина</label>
+           </li>
+         </ul>
+         <button type="submit">Показать</button>
+        </form>
     </section>
 
     <!-- Карточки товаров -->
@@ -186,9 +194,9 @@
       <form method="post">
         <fieldset>
           <label for="your-name">Ваше имя:</label>
-          <input type="text" name="name" id="your-name" pattern="Имя Фамилия">
+          <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
           <label for="your-email">Ваш e-mail:</label>
-          <input type="email" name="email" id="your-email" pattern="email@example.com">
+          <input type="email" name="email" id="your-email" placeholder="email@example.com">
           <label for="your-text">Текст письма:</label>
           <textarea name="text" id="your-text" rows="5">Текст письма:</textarea>
           <button type="submit">Отправить</button>

@@ -17,7 +17,7 @@
         <img src="img/basket-icon.svg" width="15px" height="15px" alt="Корзина">
         <a href="basket">Корзина</a>
       </nav>
-      <h1>Дизайн студия</h1>
+      <h1 class="visually-hidden">Дизайн студия</h1>
       <section>
         <p>Долго, дорого,<br>
           скрупулезно.</p>
@@ -121,15 +121,14 @@
       <form method="post">
         <fieldset>
           <label for="your-name">Ваше имя:</label>
-          <input type="text" name="name" id="your-name" pattern="Имя Фамилия">
+          <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
           <label for="your-email">Ваш e-mail:</label>
-          <input type="email" name="email" id="your-email" pattern="email@example.com">
+          <input type="email" name="email" id="your-email" placeholder="email@example.com">
           <label for="your-text">Текст письма:</label>
           <textarea name="text" id="your-text" rows="5">Текст письма:</textarea>
           <button type="submit">Отправить</button>
           <button type="button" aria-label="Закрыть">Х</button>
         </fieldset>
-
       </form>
 
     </section>
